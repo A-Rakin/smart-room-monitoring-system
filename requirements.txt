@@ -1,0 +1,19 @@
+# Core libraries
+numpy>=1.21.0
+opencv-python>=4.5.5
+requests>=2.28.0
+pillow>=9.0.0
+
+# Face detection
+mtcnn>=0.1.1
+
+# Deep learning for embeddings
+tensorflow>=2.12.0
+keras>=2.12.0
+
+# Optional: for saving/loading embeddings
+pickle5>=0.0.12
+
+# Django if you plan to integrate API later
+django>=4.2.0
+djangorestframework>=3.14.0
