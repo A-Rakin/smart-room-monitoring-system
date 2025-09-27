@@ -7,22 +7,16 @@ from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
 from telegram_notify import send_telegram_message
 import time
 
-# ===============================
 # Load Encodings
-# ===============================
 data = pickle.load(open("encodings_mtcnn.pkl", "rb"))
 known_encodings = data["encodings"]
 known_names = data["names"]
 
-# ===============================
 # Load Models
-# ===============================
 detector = MTCNN()
 model = ResNet50(weights='imagenet', include_top=False, pooling='avg')
 
-# ===============================
 # Webcam Setup
-# ===============================
 video = cv2.VideoCapture(0)
 last_alert_time = 0
 ALERT_COOLDOWN = 30  # seconds
