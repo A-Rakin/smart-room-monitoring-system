@@ -13,3 +13,5 @@ This project uses **MTCNN** and **ResNet50 embeddings** to detect faces in real-
 - Cooldown mechanism to prevent notification spam.
 
 ---
+
+## Note : You have to make your own bot, own chatid, and self bot token
